@@ -1,21 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Colorful Web Page</title>
+    <title>Instagram Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            width: 350px;
+            background: white;
+            border: 1px solid #dbdbdb;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 40px;
+            font-family: cursive;
+            margin-bottom: 30px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 6px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            background-color: #fafafa;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #0077cc;
+        }
+
+        .forgot {
+            margin-top: 15px;
+            font-size: 12px;
+        }
+
+        .forgot a {
+            text-decoration: none;
+            color: #00376b;
+        }
+    </style>
 </head>
-<body style="background-color: lightblue; text-align: center;">
+<body>
 
-    <h1 style="color: darkblue;">Welcome to My Website</h1>
+<div class="login-box">
+    <div class="logo">Instagram</div>
 
-    <p style="color: green; font-size: 20px;">
-        This is a simple HTML page with colors.
-    </p>
+    <form>
+        <input type="text" placeholder="Phone number, username, or email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Log In</button>
+    </form>
 
-    <button
-        style="background-color: pink; color: white; padding: 10px 20px; border: none; font-size: 16px;"
-        onclick="alert('Hello World!')">
-        Click Me
-    </button>
+    <div class="forgot">
+        <a href="#">Forgot password?</a>
+    </div>
+</div>
 
 </body>
 </html>
